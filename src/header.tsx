@@ -10,7 +10,7 @@ function Header() {
     <React.Fragment>
       <header style={{ maxWidth: "1200px" }}>
         <div style={{ display: "flex", padding: '10px 20px', alignItems: 'center' }}>
-          <div style={{ marginRight: '20px' }} onClick={() => navigate('/', {replace: true})}>
+          <div style={{ marginRight: '20px' }} onClick={() => navigate('/')}>
             <span style={{ fontWeight: 600 }}>Best</span>
             <span>Search</span>
           </div>
