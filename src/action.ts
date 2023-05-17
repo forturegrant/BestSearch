@@ -14,7 +14,7 @@ const useSearchAsync = () => {
     const searchContent = value.trim().replace(/\s+/g, '+');
     
     return async (dispatch: any) => {
-      navigate(`search/result/${searchContent}`);
+      navigate(`search/result/${searchContent}`, { replace: false });
       const res = await axios.post(
         "http://3.141.23.218:5000/interview/keyword_search",
         {
